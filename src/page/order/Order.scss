@@ -1,0 +1,25 @@
+.Order {
+    padding-top: 0.44rem;
+    background-color: #f3f6f5;
+    .navs {
+        padding: 0 0.37rem;
+        height: 0.44rem;
+        background-color: white;
+        .nav {
+            height: 0.44rem;
+            box-sizing: border-box;
+            font-size: 0.14rem;
+            line-height: 0.38rem;
+            color: #494a4a;
+            font-weight: 500;
+            border-top: 0.03px solid white;
+            border-bottom: 0.03rem solid white;
+        }
+        .nav-active {
+            color: #00b175;
+            font-size: 0.16rem;
+            font-weight: bold;
+            border-bottom: 0.03rem solid #00b175;
+        }
+    }
+}

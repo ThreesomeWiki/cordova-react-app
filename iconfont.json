@@ -1,0 +1,8 @@
+{
+    "symbol_url": "http://at.alicdn.com/t/font_1391869_yytqj6heamk.js",
+    "use_typescript": true,
+    "save_dir": "./src/components/iconfont",
+    "trim_icon_prefix": "icon",
+    "unit": "rem",
+    "default_icon_size": 0.2
+}

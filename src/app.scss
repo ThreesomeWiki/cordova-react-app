@@ -1,0 +1,88 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 100px;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+#app {
+    margin: 0 auto;
+    max-width: 500px;
+    min-height: 100vh;
+    background-color: #f2f2f2;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex1 {
+    flex: 1;
+}
+
+.flex-row {
+    @extend .flex;
+    flex-direction: row;
+}
+
+.flex-row-start-center {
+    @extend .flex-row;
+    align-items: center;
+}
+
+.flex-row-center-center {
+    @extend .flex-row;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-row-between-start {
+    @extend .flex-row;
+    justify-content: space-between;
+}
+
+.flex-row-between-center {
+    @extend .flex-row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-row-between-end {
+    @extend .flex-row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.flex-column {
+    @extend .flex;
+    flex-direction: column;
+}
+
+.flex-column-start-center {
+    @extend .flex-column;
+    align-items: center;
+}
+
+.flex-column-center-center {
+    @extend .flex-column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-column-between-start {
+    @extend .flex-column;
+    justify-content: space-between;
+}
+
+.line1 {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}

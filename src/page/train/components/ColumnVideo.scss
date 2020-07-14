@@ -1,0 +1,30 @@
+.Train-ColumnVideo {
+    width: 1.63rem;
+    .img {
+        width: 1.63rem;
+        height: 1.1rem;
+        border-radius: 0.04rem;
+    }
+    .title {
+        margin-top: 0.08rem;
+        font-size: 0.14rem;
+        line-height: 0.2rem;
+        color: #171717;
+    }
+    .describe {
+        margin-top: 0.04rem;
+        .price {
+            font-size: 0.12rem;
+            color: #ff3f15;
+            font-weight: 500;
+        }
+        .courseNum {
+            font-size: 0.12rem;
+            color: #494a4a;
+        }
+        .studyCount {
+            font-size: 0.12rem;
+            color: #cacccb;
+        }
+    }
+}

@@ -1,0 +1,172 @@
+.Train {
+    flex: 1;
+    padding-top: 0.44rem;
+    background-color: white;
+    .banner {
+        margin: 0.07rem 0.2rem 0 0.2rem;
+        height: 1.2rem;
+        background-color: #00b175;
+        border-radius: 0.04rem;
+        -webkit-border-radius: 0.04rem;
+        -moz-border-radius: 0.04rem;
+        -ms-border-radius: 0.04rem;
+        -o-border-radius: 0.04rem;
+    }
+    .notice {
+        margin: 0.11rem 0.2rem 0 0.2rem;
+        .title {
+            margin-left: 0.08rem;
+            font-size: 0.14rem;
+            color: #00b175;
+            font-weight: 500;
+        }
+        .content {
+            flex: 1;
+            font-size: 0.14rem;
+            color: #8e8e8e;
+        }
+    }
+    .navs {
+        margin: 0.21rem 0.2rem 0 0.2rem;
+        .nav {
+            .icon {
+                width: 0.4rem;
+                height: 0.4rem;
+                border-radius: 0.2rem;
+            }
+            .title {
+                margin-top: 0.06rem;
+                font-size: 0.14rem;
+                color: #171717;
+            }
+        }
+    }
+    .teachers {
+        margin-top: 0.18rem;
+        .teacher {
+            margin: 0.05rem 0.2rem;
+            padding: 0.18rem;
+            background-color: #f3f6f5;
+            border: 1px solid #e8ebea;
+            border-radius: 0.05rem;
+            .center {
+                margin-left: 0.13rem;
+                flex: 1;
+                .name {
+                    font-size: 0.14rem;
+                    line-height: 0.2rem;
+                    color: #171717;
+                    font-weight: bold;
+                }
+                .title {
+                    font-size: 0.14rem;
+                    line-height: 0.2rem;
+                    color: #494a4a;
+                }
+                .detail {
+                    margin-top: 0.07rem;
+                    .satisfaction {
+                        font-size: 0.12rem;
+                        line-height: 0.17rem;
+                        color: #cacccb;
+                    }
+                    .score {
+                        margin-left: 0.07rem;
+                        margin-right: 0.15rem;
+                        font-size: 0.12rem;
+                        line-height: 0.17rem;
+                        color: #494a4a;
+                    }
+                    .couseCount {
+                        font-size: 0.12rem;
+                        line-height: 0.17rem;
+                        color: #494a4a;
+                    }
+                }
+            }
+            .buttons {
+                margin-left: 0.13rem;
+                .server {
+                    padding: 0.04rem 0.18rem;
+                    box-sizing: border-box;
+                    font-size: 0.12rem;
+                    line-height: 0.17rem;
+                    color: white;
+                    background-color: #00b175;
+                    border-radius: 0.2rem;
+                }
+                .connect {
+                    margin-top: 0.1rem;
+                    padding: 0.03rem 0.18rem;
+                    box-sizing: border-box;
+                    font-size: 0.12rem;
+                    line-height: 0.17rem;
+                    color: #00b175;
+                    background-color: white;
+                    border-radius: 0.2rem;
+                    border: 1px solid #00b175;
+                }
+            }
+        }
+    }
+    .process {
+        margin-top: 0.17rem;
+        .paint {
+            margin: 0.1rem 0.2rem 0 0.2rem;
+            .line {
+                height: 0.16rem;
+                position: relative;
+                .left {
+                    flex: 6;
+                    display: block;
+                    background: linear-gradient(#ff7315, #ffd11a);
+                    border-top-left-radius: 0.08rem;
+                    border-bottom-left-radius: 0.08rem;
+                }
+                .right {
+                    flex: 4;
+                    display: block;
+                    background: #17cc8f;
+                    border-top-right-radius: 0.08rem;
+                    border-bottom-right-radius: 0.08rem;
+                }
+                .middle {
+                    width: 0.26rem;
+                    height: 0.26rem;
+                    position: absolute;
+                    z-index: 1;
+                    top: -0.05rem;
+                    bottom: -0.05rem;
+                    box-sizing: border-box;
+                    left: calc(60% - 0.13rem);
+                    background-color: white;
+                    border-radius: 0.13rem;
+                    border: 0.05rem solid #ffd241;
+                }
+            }
+            .score {
+                margin-left: 0.09rem;
+                font-size: 0.16rem;
+                color: #00b175;
+                font-weight: 500;
+            }
+        }
+    }
+    .middleline {
+        margin-top: 0.28rem;
+        height: 0.05rem;
+        background-color: #f3f6f5;
+    }
+    .hotvideos {
+        margin-top: 0.24rem;
+        .hotvideo {
+            margin: 0.1rem 0.2rem;
+        }
+    }
+    .hotvideos2 {
+        margin-top: 0.22rem;
+        .hotvideo {
+            margin-top: 0.05rem;
+        }
+    }
+}

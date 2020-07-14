@@ -1,0 +1,56 @@
+.Goods {
+    flex: 1;
+    background-color: white;
+    .header {
+        margin-top: 0.02rem;
+        .input {
+            padding: 0 0.15rem;
+            align-self: center;
+            height: 0.4rem;
+            width: 2.8rem;
+            background-color: #f5f6f7;
+            border-radius: 0.2rem;
+            -webkit-border-radius: 0.2rem;
+            -moz-border-radius: 0.2rem;
+            -ms-border-radius: 0.2rem;
+            -o-border-radius: 0.2rem;
+            .title {
+                color: #cacccb;
+                margin-left: 0.05rem;
+            }
+        }
+    }
+    .tags {
+        padding: 0 0.2rem;
+        height: 0.44rem;
+        border-bottom: 1px solid #f3f6f5;
+        .tag {
+            margin: 0 0.4rem 0 0;
+            height: 0.44rem;
+            display: block;
+            color: #494a4a;
+            font-size: 0.14rem;
+            line-height: 0.44rem;
+            font-weight: bold;
+            border-top: 0.03rem solid transparent;
+            border-bottom: 0.03rem solid transparent;
+        }
+        .tag-active {
+            color: #00b175;
+            border-bottom-color: #00b175;
+        }
+        .btn {
+            width: 0.64rem;
+            height: 0.28rem;
+            border-radius: 0.14rem;
+            -webkit-border-radius: 0.14rem;
+            -moz-border-radius: 0.14rem;
+            -ms-border-radius: 0.14rem;
+            -o-border-radius: 0.14rem;
+            background-color: #00b175;
+            color: white;
+            font-size: 0.14rem;
+            font-weight: 500;
+        }
+    }
+}

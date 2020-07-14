@@ -1,0 +1,128 @@
+.Home {
+    background-color: white;
+    .nav {
+        height: 0.44rem;
+        min-width: 100vw;
+        overflow: scroll;
+        white-space: nowrap;
+        .title {
+            padding: 0 0.2rem;
+            color: #494a4a;
+            font-size: 0.14rem;
+            font-weight: 500;
+        }
+        .title-active {
+            padding: 0 0.2rem;
+            color: #171717;
+            font-size: 0.18rem;
+            font-weight: bold;
+        }
+    }
+    .header {
+        height: 0.55rem;
+        padding: 0 0.15rem 0 0.2rem;
+        .input-box {
+            flex: 1;
+            margin-left: 0 0.05rem 0 0.1rem;
+            padding: 0 0.12rem 0 0.09rem;
+            height: 0.32rem;
+            background-color: #f3f6f5;
+            border-radius: 0.16rem;
+            -webkit-border-radius: 0.16rem;
+            -moz-border-radius: 0.16rem;
+            -ms-border-radius: 0.16rem;
+            -o-border-radius: 0.16rem;
+            .input {
+                color: #cacccb;
+                font-size: 0.12rem;
+                margin-left: 0.05rem;
+            }
+        }
+        .btn {
+            padding: 0.05rem;
+        }
+    }
+    .banner {
+        margin-top: 0.07rem;
+        height: 1.3rem;
+        .img {
+            height: 1.3rem;
+        }
+    }
+    .goods {
+        padding: 0 0.2rem;
+        .good-row {
+            margin-top: 0.19rem;
+        }
+        .good {
+            .icon {
+                width: 0.4rem;
+                height: 0.4rem;
+            }
+            .text {
+                font-size: 0.12rem;
+                color: #171717;
+                margin-top: 0.04rem;
+            }
+        }
+    }
+    .banner2 {
+        margin: 0.1rem 0.2rem 0 0.2rem;
+        height: 0.905rem;
+    }
+    .classify {
+        margin-top: 0.08rem;
+        .types {
+            margin: 0.09rem 0.2rem 0 0.2rem;
+            .icon {
+                width: 1.63rem;
+                height: 0.7rem;
+            }
+        }
+    }
+    .hot {
+        margin-top: 0.22rem;
+        margin-right: 0.2rem;
+        .list {
+            margin: 0 0.1rem;
+            white-space: nowrap;
+            overflow: scroll;
+            .item {
+                margin: 0.1rem;
+            }
+        }
+    }
+    .tags {
+        margin: 0.4rem 0.2rem 0.16rem 0.2rem;
+        .tag {
+            padding: 0.09rem 0.15rem;
+            display: block;
+            box-sizing: border-box;
+            color: #00b175;
+            font-size: 0.12rem;
+            font-weight: 500;
+            border: 1px solid #00b175;
+            border-radius: 0.15rem;
+            -webkit-border-radius: 0.15rem;
+            -moz-border-radius: 0.15rem;
+            -ms-border-radius: 0.15rem;
+            -o-border-radius: 0.15rem;
+        }
+        .tag-active {
+            background-color: #00b175;
+            color: white;
+        }
+    }
+    .bg {
+        padding-top: 0.2rem;
+        background-color: #f3f6f5;
+        .goodslist {
+            padding: 0 0.2rem;
+        }
+    }
+    .recommand {
+        .item {
+            padding: 0 0.2rem;
+        }
+    }
+}

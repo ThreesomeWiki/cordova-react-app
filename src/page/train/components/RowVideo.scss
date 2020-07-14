@@ -1,0 +1,48 @@
+.Train-RowVideo {
+    margin: 0.08rem 0.2rem;
+    height: 0.8rem;
+    background-color: #f3f6f5;
+    border-radius: 0.04rem;
+    .content {
+        margin-left: 0.14rem;
+        .top {
+            .hot {
+                padding: 0.03rem 0.05rem;
+                display: block;
+                background-color: #ffa01a;
+                border-radius: 0.04rem;
+                font-size: 0.11rem;
+                color: white;
+                line-height: 0.16rem;
+            }
+            .title {
+                margin-left: 0.05rem;
+                font-size: 0.14rem;
+                color: #171717;
+            }
+        }
+        .bottom {
+            margin-top: 0.11rem;
+            .avatar {
+                width: 0.24rem;
+                height: 0.24rem;
+                border-radius: 0.12rem;
+                margin-right: 0.06rem;
+            }
+            .name {
+                font-size: 0.12rem;
+                color: #494a4a;
+                font-weight: 500;
+            }
+            .viewNum {
+                font-size: 0.12rem;
+                color: #cacccb;
+            }
+        }
+    }
+    .cover {
+        margin-left: 0.2rem;
+        width: 0.85rem;
+        height: 0.8rem;
+    }
+}

@@ -1,0 +1,53 @@
+.Home-GoodsColumnDetail {
+    margin-bottom: 0.19rem;
+    width: 1.63rem;
+    box-shadow: 0.02rem 0.02rem 0.02rem #f3f6f5;
+    background-color: white;
+    border-radius: 0.06rem;
+    -webkit-border-radius: 0.06re;
+    -moz-border-radius: 0.06re;
+    -ms-border-radius: 0.06re;
+    -o-border-radius: 0.06re;
+    .cover {
+        height: 1.52rem;
+        border-bottom: 1px solid #f3f6f5;
+        .img {
+            width: 0.99rem;
+            height: 0.95rem;
+            display: block;
+        }
+    }
+    .title {
+        margin-top: 0.08rem;
+        padding: 0 0.12rem;
+        font-size: 0.16rem;
+        line-height: 0.26rem;
+        color: #171717;
+    }
+    .sub-title {
+        padding: 0 0.12rem;
+        font-size: 0.14rem;
+        color: #494a4a;
+    }
+    .goodstags {
+        margin-top: 0.08rem;
+        padding: 0 0.12rem;
+        .tag {
+            padding: 0 0.09rem;
+            font-size: 0.11rem;
+            color: #00b175;
+            line-height: 0.2rem;
+            background-color: #f3f6f5;
+            margin-right: 0.05rem;
+        }
+    }
+    .bottom {
+        padding: 0 0.12rem;
+        margin-top: 0.1rem;
+        margin-bottom: 0.12rem;
+        .price {
+            font-size: 0.16rem;
+            color: #ff3f15;
+        }
+    }
+}
