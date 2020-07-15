@@ -5,6 +5,7 @@ import Home from '../home/Home';
 import Train from '../train/Train';
 import Goods from '../goods/Goods';
 import Order from '../order/Order';
+import User from '../user/User';
 import './MainScreen.scss';
 
 interface tabType {
@@ -15,14 +16,14 @@ interface tabType {
 }
 
 export default function MainScreen() {
-    const [active, setActive] = useState(3);
+    const [active, setActive] = useState(4);
 
     const Tabs: tabType[] = [
         { title: '首页', iconName: 'zu6', iconNameActive: 'zu7', Component: Home },
         { title: '培训', iconName: 'zu2', iconNameActive: 'zu5', Component: Train },
         { title: '货源', iconName: 'zu', iconNameActive: 'zu8', Component: Goods },
         { title: '订单', iconName: 'zu3', iconNameActive: 'zu9', Component: Order },
-        { title: '我的', iconName: 'zu1', iconNameActive: 'zu4', Component: Home },
+        { title: '我的', iconName: 'zu1', iconNameActive: 'zu4', Component: User },
     ];
 
     const onChangeTab = index => setActive(index);
