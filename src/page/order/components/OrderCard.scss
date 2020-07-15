@@ -1,2 +1,72 @@
 .Order-OrderCard {
+    margin: 0.08rem 0.2rem;
+    padding: 0.2rem;
+    background-color: white;
+    border-radius: 0.05rem;
+    .card-header {
+        .time {
+            color: #cacccb;
+            font-size: 0.12rem;
+        }
+        .status {
+            color: #00b175;
+            font-size: 0.14rem;
+            font-weight: 500;
+        }
+    }
+    .card-body {
+        margin-top: 0.07rem;
+        padding-bottom: 0.11rem;
+        border-bottom: 1px solid #f3f6f5;
+        .cover {
+            margin-right: 0.13rem;
+            width: 0.7rem;
+            height: 0.8rem;
+        }
+        .title {
+            font-size: 0.14rem;
+            color: #494a4a;
+            line-height: 0.2rem;
+        }
+        .subtitle {
+            font-size: 0.12rem;
+            color: #cacccb;
+        }
+        .count {
+            font-size: 0.12rem;
+            color: #494a4a;
+        }
+        .pre-price {
+            font-size: 0.11rem;
+            color: #666666;
+        }
+        .price {
+            font-size: 0.16rem;
+            color: #ff3f15;
+            font-weight: 500;
+        }
+    }
+    .card-footer {
+        padding-top: 0.14rem;
+        .labs {
+            .lab {
+                font-size: 0.11rem;
+                color: #cacccb;
+            }
+            .line {
+                margin: 0 0.02rem;
+            }
+        }
+        .button-left {
+            padding: 0.05rem 0.15rem;
+            font-size: 0.14rem;
+            color: #00b175;
+            border: 1px solid #00b175;
+            border-radius: 0.04rem;
+        }
+        .button-right {
+            @extend .button-left;
+            margin-left: 0.08rem;
+        }
+    }
 }
