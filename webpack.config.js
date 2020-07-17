@@ -5,7 +5,7 @@ module.exports = {
     entry: './index.tsx',
     output: {
         filename: 'bundle.js',
-        path: path.resolve(__dirname, 'dist'),
+        path: path.resolve(__dirname, './app/www'),
         chunkFilename: '[name].js',
     },
     module: {

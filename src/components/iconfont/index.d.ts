@@ -1,0 +1,11 @@
+import { CSSProperties, DOMAttributes, FunctionComponent } from 'react';
+export declare type IconNames = 'gouwuche1' | 'vipmaijiaxiu' | 'QQ' | 'icon_wenti' | 'icoxinxiaoxi' | 'icon-vip' | 'B-shurukuang' | 'tongzhi' | 'xiaoxituisongshezhi' | 'liaotian' | 'tousuzixun1' | 'zu' | 'zu1' | 'zu2' | 'zu3' | 'zu4' | 'zu5' | 'zu6' | 'zu7' | 'zu8' | 'zu9' | 'zu10' | 'xiaoxi2' | 'huitui' | 'zijin' | 'tousuyujianyi1' | 'guanyuwomen2' | 'tousuzixun2' | 'mubiaox' | 'shanchu' | 'close' | 'jian' | 'jia11' | 'guanbi11' | 'aixin' | 'huodong1' | 'zhibo-1' | 'dianpuzhuangxiu' | 'dianpuguanli' | 'hetongguanli' | 'dianputuoguan' | 'kuaisubudan' | 'puhuojilu' | 'wentidingdan' | 'shoucangjia' | 'ruanjianxiaoshou' | 'wodedingyue' | 'kuaisubuhuo' | 'yijiankaidian' | 'xiaoshoujilu' | 'xinshouzhidao' | 'dingdanguanli' | 'zizhugonghuo' | 'puhuojilu1' | 'tuihuojilu' | 'fapiaoguanli' | 'dizhi' | 'zu11' | 'lujing' | 'lujing1' | 'zu12' | 'tishi2' | 'paizhao' | 'ic_remove_px' | 'ic_add_px' | 'zhengque-copy' | 'down' | 'weixin1' | 'cross' | 'gouwuche' | 'up' | 'yuyin' | 'zhengque' | 'yijianfankui' | 'xiaoxi' | 'yinhangka' | 'zhibo-' | 'xiaoxituisongpeizhi' | 'yuezhifu' | 'xiaoxituisongpeizhi1' | 'tupian' | 'weixin' | 'yuyin1' | 'tishi' | 'xuexi' | 'wuxing' | 'xiewenzhang' | 'tousuyujianyi' | 'xiaoxi1' | 'taobao' | 'yuyin2' | 'weidenglu-touxiang' | 'xuexi1' | 'tuiguang-kuai' | 'tousuzixun' | 'tuihuodan' | 'tishi1' | 'wuxing1' | 'taobao1' | 'tedian_quanchangbaoyou' | 'shouji' | 'sousuo' | 'shouye' | 'shangpin-' | 'shezhi' | 'shujuxian' | 'shipinbofangyingpian' | 'shoujixiangqingyezhuangxiu' | 'shijian' | 'shezhi1' | 'saomiaoerweimaon' | 'shaixuan' | 'shaixuan1' | 'qinglihuancun' | 'mianmo' | 'rongqi' | 'mima' | 'lianxifangshilogo' | 'kanjian' | 'luxianghuifang_' | 'juanzhi' | 'kefu' | 'jiantou_arrow' | 'jia' | 'jianchagengxin' | 'jia1' | 'jinru' | 'lishijilu' | 'jia2' | 'huowu' | 'jilu' | 'huiyuan' | 'huodong' | 'huaban' | 'jiahao' | 'guanyuwomen' | 'guanyuwomen1' | 'arrow' | 'camera-b' | 'jewelry' | 'heart' | 'Star' | 'huanyipi' | 'menu' | 'search' | 'right' | 'fanhui2' | 'fanhui';
+interface Props extends DOMAttributes<SVGElement> {
+    name: IconNames;
+    size?: number;
+    color?: string | string[];
+    style?: CSSProperties;
+    className?: string;
+}
+declare const IconFont: FunctionComponent<Props>;
+export default IconFont;
