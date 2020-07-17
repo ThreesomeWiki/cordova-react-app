@@ -1,15 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="io.cordova.hellocordova" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.demo" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <feature name="Whitelist">
         <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
         <param name="onload" value="true" />
     </feature>
-    <name>HelloCordova</name>
+    <feature name="Wechat">
+        <param name="android-package" value="xu.li.cordova.wechat.Wechat" />
+    </feature>
+    <name>hooks-ts</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.
     </description>
-    <author email="dev@cordova.apache.org" href="http://cordova.io">
-        Apache Cordova Team
+    <author email="hanhuizhuxyl@gmail.com" href="http://cordova.io">
+       hanhuizhu
     </author>
     <content src="index.html" />
     <access origin="*" />
@@ -21,4 +24,5 @@
     <allow-intent href="geo:*" />
     <allow-intent href="market:*" />
     <preference name="loglevel" value="DEBUG" />
+    <preference name="WECHATAPPID" value="wx1e8d60fc10d0721c" />
 </widget>

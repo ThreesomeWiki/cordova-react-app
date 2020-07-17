@@ -1,8 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Icon, { IconNames } from '../../components/iconfont';
 import getImage from '../../server/getImage';
 import './User.scss';
-import { url } from 'inspector';
 
 interface Navs {
     title: string;
@@ -69,6 +68,28 @@ export default function User() {
         { title: '退货记录', icon: 'tuihuodan' },
     ];
 
+    useEffect(() => {}, []);
+
+    const onItemClick = () => {
+        if (window.Wechat) {
+            window.Wechat.isInstalled(installed => {
+                if (!installed) return;
+                window.Wechat.share(
+                    {
+                        text: 'This is just a plain string',
+                        scene: window.Wechat.Scene.TIMELINE,
+                    },
+                    () => {
+                        alert('success');
+                    },
+                    e => {
+                        alert('fail:' + e);
+                    }
+                );
+            });
+        }
+    };
+
     return (
         <article className="User">
             {/* header */}
@@ -90,7 +111,7 @@ export default function User() {
                 {myShop.map(shops => (
                     <div className="flex-row-between-center shops" key={shops.map(shop => shop.title).toString()}>
                         {shops.map(shop => (
-                            <div className="flex-column-start-center shop" key={shop.title}>
+                            <div className="flex-column-start-center shop" key={shop.title} onClick={onItemClick}>
                                 <img src={shop.icon} className="img" />
                                 <span className="shop-title">{shop.title}</span>
                             </div>

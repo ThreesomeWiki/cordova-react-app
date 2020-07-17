@@ -100,6 +100,7 @@ ext {
 }
 
 // PLUGIN GRADLE EXTENSIONS START
+apply from: "../cordova-plugin-wechat/hellocordova-android-build.gradle"
 // PLUGIN GRADLE EXTENSIONS END
 
 def hasBuildExtras1 = file('build-extras.gradle').exists()
