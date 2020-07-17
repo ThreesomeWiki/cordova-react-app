@@ -13,6 +13,7 @@
     }
     .navs {
         margin: 0 0.2rem;
+        padding: 0 0.23rem;
         height: 1rem;
         box-sizing: border-box;
         background-color: white;
@@ -22,11 +23,67 @@
             width: 0.4rem;
             height: 0.4rem;
             border-radius: 0.2rem;
+            background-repeat: no-repeat;
+            background-size: contain;
         }
         .title {
-            margin-top: 0.6rem;
+            margin-top: 0.06rem;
             color: #171717;
-            
+        }
+    }
+    .myshop {
+        margin: 0.16rem 0.2rem 0.05rem 0.2rem;
+        padding: 0.11rem 0.2rem;
+        background-color: white;
+        border-radius: 0.03rem;
+        .title {
+            font-size: 0.16rem;
+            line-height: 0.24rem;
+            color: #171717;
+            font-weight: bold;
+        }
+        .shops {
+            margin: 0.21rem 0;
+            .shop {
+                .img {
+                    width: 0.18rem;
+                    height: 0.18rem;
+                }
+                .shop-title {
+                    margin-top: 0.06rem;
+                    color: #494a4a;
+                    font-size: 0.12rem;
+                }
+            }
+        }
+    }
+    .myorder {
+        margin: 0.16rem 0.2rem;
+        padding: 0.13rem 0 0.05rem 0.2rem;
+        background-color: white;
+        border-radius: 0.04rem;
+        .title {
+            margin-bottom: 0.06rem;
+            font-size: 0.16rem;
+            line-height: 0.24rem;
+            color: #171717;
+            font-weight: bold;
+        }
+        .order {
+            .right {
+                margin-left: 0.13rem;
+                padding-right: 0.2rem;
+                flex: 1;
+                height: 0.46rem;
+                border-bottom: 1px solid #f3f6f5;
+                .order-title {
+                    color: #494a4a;
+                    font-size: 0.12rem;
+                }
+            }
+            .right-noborder {
+                border-bottom-color: white;
+            }
         }
     }
 }
