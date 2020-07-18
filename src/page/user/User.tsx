@@ -104,7 +104,6 @@ export default function User() {
 
     const onFileDownload = () => {
         // FilePlugin.download().then(data => {});
-        alert(1);
         ExitAppPlugin.exit();
     };
 

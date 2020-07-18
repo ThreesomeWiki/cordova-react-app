@@ -34,6 +34,9 @@
     <feature name="ExitApp">
         <param name="android-package" value="kr.co.joycorp.cordova.exitapp" />
     </feature>
+    <feature name="ExitApp">
+        <param name="android-package" value="cordova.custom.plugins.exitapp.ExitApp" />
+    </feature>
     <name>
 		hooks-ts
 	</name>

@@ -37,6 +37,9 @@
     },
     "kr.co.joycorp.cordova.exitapp": {
       "PACKAGE_NAME": "com.demo"
+    },
+    "cordova.custom.plugins.exitapp": {
+      "PACKAGE_NAME": "com.demo"
     }
   },
   "dependent_plugins": {

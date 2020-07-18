@@ -137,6 +137,10 @@
             {
               "xml": "<feature name=\"ExitApp\"><param name=\"android-package\" value=\"kr.co.joycorp.cordova.exitapp\" /></feature>",
               "count": 1
+            },
+            {
+              "xml": "<feature name=\"ExitApp\"><param name=\"android-package\" value=\"cordova.custom.plugins.exitapp.ExitApp\" /></feature>",
+              "count": 1
             }
           ]
         }
@@ -176,6 +180,9 @@
       "PACKAGE_NAME": "com.demo"
     },
     "kr.co.joycorp.cordova.exitapp": {
+      "PACKAGE_NAME": "com.demo"
+    },
+    "cordova.custom.plugins.exitapp": {
       "PACKAGE_NAME": "com.demo"
     }
   },
@@ -518,6 +525,14 @@
       "merges": [
         "navigator.app"
       ]
+    },
+    {
+      "id": "cordova.custom.plugins.exitapp.exitApp",
+      "file": "plugins/cordova.custom.plugins.exitapp/www/ExitApp.js",
+      "pluginId": "cordova.custom.plugins.exitapp",
+      "merges": [
+        "navigator.app"
+      ]
     }
   ],
   "plugin_metadata": {
@@ -530,6 +545,7 @@
     "phonegap-plugin-barcodescanner": "8.1.0",
     "cordova-plugin-file": "6.0.2",
     "cordova-plugin-file-transfer": "1.7.1",
-    "kr.co.joycorp.cordova.exitapp": "1.0.0"
+    "kr.co.joycorp.cordova.exitapp": "1.0.0",
+    "cordova.custom.plugins.exitapp": "1.0.0"
   }
 }
