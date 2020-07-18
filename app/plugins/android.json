@@ -17,6 +17,10 @@
     },
     "cordova-plugin-splashscreen": {
       "PACKAGE_NAME": "com.demo"
+    },
+    "cordova-plugin-camera": {
+      "ANDROID_SUPPORT_V4_VERSION": "27.+",
+      "PACKAGE_NAME": "com.demo"
     }
   },
   "dependent_plugins": {}

@@ -1,6 +1,8 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Icon, { IconNames } from '../../components/iconfont';
 import getImage from '../../server/getImage';
+import WechatPlugin from '../../plugins/wechatPlugin';
+import CameraPlugin from '../../plugins/cameraPlugin';
 import './User.scss';
 
 interface Navs {
@@ -68,36 +70,34 @@ export default function User() {
         { title: '退货记录', icon: 'tuihuodan' },
     ];
 
+    const [avatar, setAvatar] = useState('');
+
     useEffect(() => {}, []);
 
     const onItemClick = () => {
-        if (window.Wechat) {
-            window.Wechat.isInstalled(installed => {
-                if (!installed) return;
-                window.Wechat.share(
-                    {
-                        text: 'This is just a plain string',
-                        scene: window.Wechat.Scene.TIMELINE,
-                    },
-                    () => {
-                        alert('success');
-                    },
-                    e => {
-                        alert('fail:' + e);
-                    }
-                );
+        WechatPlugin.share();
+    };
+
+    const onOpenCamera = () => {
+        CameraPlugin.getPicture()
+            .then((data: string) => {
+                setAvatar(data);
+            })
+            .catch(e => {
+                console.log(e);
             });
-        }
     };
 
     return (
         <article className="User">
             {/* header */}
-            <header className="flex-column-start-center user-header"></header>
+            <header className="flex-column-center-center user-header">
+                {avatar ? <img src="" className="user-avatar" /> : null}
+            </header>
             {/* navs */}
             <nav className="flex-row-between-center navs">
                 {navs.map(nav => (
-                    <div className="flex-column-start-center" key={nav.title}>
+                    <div className="flex-column-start-center" key={nav.title} onClick={onOpenCamera}>
                         <div className="flex-row-center-center icon" style={{ backgroundImage: `url('${nav.bg}')` }}>
                             <Icon name={nav.icon} size={0.2} color="white" />
                         </div>
