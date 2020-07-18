@@ -434,6 +434,14 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
       "clobbers": [
         "cordova.plugin.http"
       ]
+    },
+    {
+      "id": "cordova-plugin-app-version.AppVersionPlugin",
+      "file": "plugins/cordova-plugin-app-version/www/AppVersionPlugin.js",
+      "pluginId": "cordova-plugin-app-version",
+      "clobbers": [
+        "cordova.getAppVersion"
+      ]
     }
   ];
   module.exports.metadata = {
@@ -450,6 +458,7 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
     "cordova.custom.plugins.exitapp": "1.0.0",
     "cordova-plugin-inappbrowser": "4.0.0",
     "cordova-plugin-statusbar": "2.4.3",
-    "cordova-plugin-advanced-http": "3.0.0"
+    "cordova-plugin-advanced-http": "3.0.0",
+    "cordova-plugin-app-version": "0.1.9"
   };
 });

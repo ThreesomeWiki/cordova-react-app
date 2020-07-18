@@ -11,6 +11,7 @@ import ScanPlugin from '../../plugins/ScanPlugin';
 import ExitAppPlugin from '../../plugins/exitAppPlugin';
 import StatusBarPlugin from '../../plugins/statusBarPlugin';
 import RequestPlugin from '../../plugins/requestPlugin';
+import VersionPlugin from '../../plugins/versionPlugin';
 import './User.scss';
 
 interface Navs {
@@ -106,11 +107,13 @@ export default function User() {
         ScanPlugin.scan().then(data => {});
     };
 
-    const onFileDownload = () => {
+    const onFileDownload = async () => {
         // FilePlugin.download().then(data => {});
         // ExitAppPlugin.exit();
         // InAppBrowserPlugin.open();
-        RequestPlugin.request();
+        // RequestPlugin.request();
+        const version = await VersionPlugin.getVersion();
+        alert(version);
     };
 
     return (

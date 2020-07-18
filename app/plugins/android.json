@@ -49,6 +49,9 @@
     },
     "cordova-plugin-advanced-http": {
       "PACKAGE_NAME": "com.demo"
+    },
+    "cordova-plugin-app-version": {
+      "PACKAGE_NAME": "com.demo"
     }
   },
   "dependent_plugins": {

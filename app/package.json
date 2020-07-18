@@ -15,6 +15,7 @@
   "dependencies": {
     "cordova-android": "^8.1.0",
     "cordova-plugin-advanced-http": "^3.0.0",
+    "cordova-plugin-app-version": "^0.1.9",
     "cordova-plugin-camera": "^4.1.0",
     "cordova-plugin-contacts": "^3.0.1",
     "cordova-plugin-device": "^2.0.3",
@@ -52,7 +53,8 @@
       "cordova.custom.plugins.exitapp": {},
       "cordova-plugin-inappbrowser": {},
       "cordova-plugin-statusbar": {},
-      "cordova-plugin-advanced-http": {}
+      "cordova-plugin-advanced-http": {},
+      "cordova-plugin-app-version": {}
     },
     "platforms": [
       "android"
