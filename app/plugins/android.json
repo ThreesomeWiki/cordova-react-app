@@ -64,6 +64,9 @@
     },
     "cordova-plugin-nativestorage": {
       "PACKAGE_NAME": "com.demo"
+    },
+    "cordova-plugin-datepicker": {
+      "PACKAGE_NAME": "com.demo"
     }
   },
   "dependent_plugins": {

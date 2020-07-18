@@ -112,6 +112,16 @@ export default function User() {
     };
 
     const onFileDownload = async () => {
+        window.datePicker.show(
+            {
+                date: new Date(),
+                mode: 'date',
+            },
+            date => {
+                alert('Selected date: ' + date);
+            }
+        );
+
         // FilePlugin.download().then(data => {});
         // ExitAppPlugin.exit();
         // InAppBrowserPlugin.open();
@@ -121,8 +131,8 @@ export default function User() {
         // SettingPlugin.openWifi();
         // NotificationPlugin.create();
         // GeolocationPlugin.getLocation();
-        await StoragePlugin.setItem('name', '张三');
-        const data = await StoragePlugin.getItem('name');
+        // await StoragePlugin.setItem('name', '张三');
+        // const data = await StoragePlugin.getItem('name');
     };
 
     return (

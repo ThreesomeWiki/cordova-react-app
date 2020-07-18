@@ -5,6 +5,7 @@ interface Window {
     StatusBar: any;
     FileTransfer: any;
     NativeStorage: any;
+    datePicker: any;
 }
 interface Navigator {
     camera: any;

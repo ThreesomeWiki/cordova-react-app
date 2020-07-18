@@ -83,6 +83,10 @@
             {
               "xml": "<feature name=\"NativeStorage\"><param name=\"android-package\" value=\"NativeStorage\" /></feature>",
               "count": 1
+            },
+            {
+              "xml": "<feature name=\"DatePickerPlugin\"><param name=\"android-package\" value=\"com.plugin.datepicker.DatePickerPlugin\" /></feature>",
+              "count": 1
             }
           ]
         }
@@ -282,6 +286,9 @@
       "PACKAGE_NAME": "com.demo"
     },
     "cordova-plugin-nativestorage": {
+      "PACKAGE_NAME": "com.demo"
+    },
+    "cordova-plugin-datepicker": {
       "PACKAGE_NAME": "com.demo"
     }
   },
@@ -803,6 +810,14 @@
       "id": "cordova-plugin-nativestorage.NativeStorageError",
       "file": "plugins/cordova-plugin-nativestorage/www/NativeStorageError.js",
       "pluginId": "cordova-plugin-nativestorage"
+    },
+    {
+      "id": "cordova-plugin-datepicker.DatePicker",
+      "file": "plugins/cordova-plugin-datepicker/www/android/DatePicker.js",
+      "pluginId": "cordova-plugin-datepicker",
+      "clobbers": [
+        "datePicker"
+      ]
     }
   ],
   "plugin_metadata": {
@@ -825,6 +840,7 @@
     "cordova-plugin-badge": "0.8.8",
     "cordova-plugin-local-notification": "0.9.0-beta.2",
     "cordova-plugin-geolocation": "4.0.2",
-    "cordova-plugin-nativestorage": "2.3.2"
+    "cordova-plugin-nativestorage": "2.3.2",
+    "cordova-plugin-datepicker": "0.9.3"
   }
 }
