@@ -67,6 +67,9 @@
     },
     "cordova-plugin-datepicker": {
       "PACKAGE_NAME": "com.demo"
+    },
+    "cordova-plugin-vibration": {
+      "PACKAGE_NAME": "com.demo"
     }
   },
   "dependent_plugins": {

@@ -32,6 +32,7 @@
     "cordova-plugin-nativestorage": "^2.3.2",
     "cordova-plugin-splashscreen": "^5.0.4",
     "cordova-plugin-statusbar": "^2.4.3",
+    "cordova-plugin-vibration": "^3.1.1",
     "cordova-plugin-wechat": "^3.0.0",
     "phonegap-plugin-barcodescanner": "^8.1.0"
   },
@@ -65,7 +66,8 @@
       "cordova-plugin-local-notification": {},
       "cordova-plugin-geolocation": {},
       "cordova-plugin-nativestorage": {},
-      "cordova-plugin-datepicker": {}
+      "cordova-plugin-datepicker": {},
+      "cordova-plugin-vibration": {}
     },
     "platforms": [
       "android"

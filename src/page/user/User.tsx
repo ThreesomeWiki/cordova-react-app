@@ -16,6 +16,7 @@ import SettingPlugin from '../../plugins/settingPlugin';
 import NotificationPlugin from '../../plugins/notificationPlugin';
 import GeolocationPlugin from '../../plugins/geolocationPlugin';
 import StoragePlugin from '../../plugins/storagePlugin';
+import VibrationPlugin from '../../plugins/vibrationPlugin';
 import './User.scss';
 
 interface Navs {
@@ -112,16 +113,7 @@ export default function User() {
     };
 
     const onFileDownload = async () => {
-        window.datePicker.show(
-            {
-                date: new Date(),
-                mode: 'date',
-            },
-            date => {
-                alert('Selected date: ' + date);
-            }
-        );
-
+        VibrationPlugin.vibrate();
         // FilePlugin.download().then(data => {});
         // ExitAppPlugin.exit();
         // InAppBrowserPlugin.open();
