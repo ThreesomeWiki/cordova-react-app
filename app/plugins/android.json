@@ -27,6 +27,10 @@
     },
     "cordova-plugin-contacts": {
       "PACKAGE_NAME": "com.demo"
+    },
+    "phonegap-plugin-barcodescanner": {
+      "ANDROID_SUPPORT_V4_VERSION": "27.+",
+      "PACKAGE_NAME": "com.demo"
     }
   },
   "dependent_plugins": {}

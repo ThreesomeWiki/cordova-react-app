@@ -18,7 +18,8 @@
     "cordova-plugin-contacts": "^3.0.1",
     "cordova-plugin-device": "^2.0.3",
     "cordova-plugin-splashscreen": "^5.0.4",
-    "cordova-plugin-wechat": "^3.0.0"
+    "cordova-plugin-wechat": "^3.0.0",
+    "phonegap-plugin-barcodescanner": "^8.1.0"
   },
   "devDependencies": {
     "cordova-plugin-whitelist": "^1.3.4"
@@ -35,7 +36,10 @@
         "ANDROID_SUPPORT_V4_VERSION": "27.+"
       },
       "cordova-plugin-device": {},
-      "cordova-plugin-contacts": {}
+      "cordova-plugin-contacts": {},
+      "phonegap-plugin-barcodescanner": {
+        "ANDROID_SUPPORT_V4_VERSION": "27.+"
+      }
     },
     "platforms": [
       "android"

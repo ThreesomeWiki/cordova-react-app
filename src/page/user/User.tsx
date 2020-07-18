@@ -5,6 +5,7 @@ import WechatPlugin from '../../plugins/wechatPlugin';
 import CameraPlugin from '../../plugins/cameraPlugin';
 import DevicePlugin, { DeviceType } from '../../plugins/devicePligin';
 import ContactPlugin from '../../plugins/contactPlugin';
+import ScanPlugin from '../../plugins/ScanPlugin';
 import './User.scss';
 
 interface Navs {
@@ -78,7 +79,7 @@ export default function User() {
         DevicePlugin.getInfo().then((data: DeviceType) => {
             // alert(data.uuid);
         });
-        ContactPlugin.getContact();
+        // ContactPlugin.getContact();
     }, []);
 
     const onItemClick = () => {
@@ -95,6 +96,10 @@ export default function User() {
             });
     };
 
+    const onSanf = () => {
+        ScanPlugin.scan().then(data => {});
+    };
+
     return (
         <article className="User">
             {/* header */}
@@ -104,7 +109,7 @@ export default function User() {
             {/* navs */}
             <nav className="flex-row-between-center navs">
                 {navs.map(nav => (
-                    <div className="flex-column-start-center" key={nav.title} onClick={onOpenCamera}>
+                    <div className="flex-column-start-center" key={nav.title} onClick={onSanf}>
                         <div className="flex-row-center-center icon" style={{ backgroundImage: `url('${nav.bg}')` }}>
                             <Icon name={nav.icon} size={0.2} color="white" />
                         </div>
