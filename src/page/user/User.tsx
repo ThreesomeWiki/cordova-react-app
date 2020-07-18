@@ -9,6 +9,7 @@ import FilePlugin from '../../plugins/filePlugin';
 import InAppBrowserPlugin from '../../plugins/inAppBrowserPlugin';
 import ScanPlugin from '../../plugins/ScanPlugin';
 import ExitAppPlugin from '../../plugins/exitAppPlugin';
+import StatusBarPlugin from '../../plugins/statusBarPlugin';
 import './User.scss';
 
 interface Navs {
@@ -79,6 +80,7 @@ export default function User() {
     const [avatar, setAvatar] = useState('');
 
     useEffect(() => {
+        StatusBarPlugin.setBackground();
         DevicePlugin.getInfo().then((data: DeviceType) => {
             // alert(data.uuid);
         });

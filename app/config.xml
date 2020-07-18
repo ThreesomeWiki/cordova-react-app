@@ -46,4 +46,8 @@
 	<preference name="SplashScreenDelay" value="3000" />
 	<preference name="ShowSplashScreenSpinner" value="false" />
 	<preference name="AndroidPersistentFileLocation" value="Compatibility" />
+	<preference name="StatusBarOverlaysWebView" value="true" />
+	<preference name="StatusBarBackgroundColor" value="#000000" />
+	<preference name="StatusBarStyle" value="lightcontent" />
+	<preference name="StatusBarDefaultScrollToTop" value="false" />
 </widget>
