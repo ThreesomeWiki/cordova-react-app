@@ -61,6 +61,9 @@
     },
     "cordova-plugin-geolocation": {
       "PACKAGE_NAME": "com.demo"
+    },
+    "cordova-plugin-nativestorage": {
+      "PACKAGE_NAME": "com.demo"
     }
   },
   "dependent_plugins": {

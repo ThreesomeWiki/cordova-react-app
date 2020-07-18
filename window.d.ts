@@ -4,6 +4,7 @@ interface Window {
     device: any;
     StatusBar: any;
     FileTransfer: any;
+    NativeStorage: any;
 }
 interface Navigator {
     camera: any;

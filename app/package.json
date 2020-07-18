@@ -28,6 +28,7 @@
     "cordova-plugin-geolocation": "^4.0.2",
     "cordova-plugin-inappbrowser": "^4.0.0",
     "cordova-plugin-local-notification": "^0.9.0-beta.2",
+    "cordova-plugin-nativestorage": "^2.3.2",
     "cordova-plugin-splashscreen": "^5.0.4",
     "cordova-plugin-statusbar": "^2.4.3",
     "cordova-plugin-wechat": "^3.0.0",
@@ -61,7 +62,8 @@
       "cordova-plugin-app-version": {},
       "cordova-open-native-settings": {},
       "cordova-plugin-local-notification": {},
-      "cordova-plugin-geolocation": {}
+      "cordova-plugin-geolocation": {},
+      "cordova-plugin-nativestorage": {}
     },
     "platforms": [
       "android"

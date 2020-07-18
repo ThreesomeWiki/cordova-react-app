@@ -15,6 +15,7 @@ import VersionPlugin from '../../plugins/versionPlugin';
 import SettingPlugin from '../../plugins/settingPlugin';
 import NotificationPlugin from '../../plugins/notificationPlugin';
 import GeolocationPlugin from '../../plugins/geolocationPlugin';
+import StoragePlugin from '../../plugins/storagePlugin';
 import './User.scss';
 
 interface Navs {
@@ -119,7 +120,9 @@ export default function User() {
         // alert(version);
         // SettingPlugin.openWifi();
         // NotificationPlugin.create();
-        GeolocationPlugin.getLocation();
+        // GeolocationPlugin.getLocation();
+        await StoragePlugin.setItem('name', '张三');
+        const data = await StoragePlugin.getItem('name');
     };
 
     return (
