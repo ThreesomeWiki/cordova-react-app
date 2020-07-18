@@ -34,6 +34,9 @@
     },
     "cordova-plugin-file-transfer": {
       "PACKAGE_NAME": "com.demo"
+    },
+    "kr.co.joycorp.cordova.exitapp": {
+      "PACKAGE_NAME": "com.demo"
     }
   },
   "dependent_plugins": {

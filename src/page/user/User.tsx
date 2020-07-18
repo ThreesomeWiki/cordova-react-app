@@ -7,6 +7,7 @@ import DevicePlugin, { DeviceType } from '../../plugins/devicePligin';
 import ContactPlugin from '../../plugins/contactPlugin';
 import FilePlugin from '../../plugins/filePlugin';
 import ScanPlugin from '../../plugins/ScanPlugin';
+import ExitAppPlugin from '../../plugins/exitAppPlugin';
 import './User.scss';
 
 interface Navs {
@@ -102,7 +103,9 @@ export default function User() {
     };
 
     const onFileDownload = () => {
-        FilePlugin.download().then(data => {});
+        // FilePlugin.download().then(data => {});
+        alert(1);
+        ExitAppPlugin.exit();
     };
 
     return (

@@ -329,6 +329,14 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
       "clobbers": [
         "window.FileTransfer"
       ]
+    },
+    {
+      "id": "kr.co.joycorp.cordova.exitapp.exitApp",
+      "file": "plugins/kr.co.joycorp.cordova.exitapp/www/ExitApp.js",
+      "pluginId": "kr.co.joycorp.cordova.exitapp",
+      "merges": [
+        "navigator.app"
+      ]
     }
   ];
   module.exports.metadata = {
@@ -340,6 +348,7 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
     "cordova-plugin-contacts": "3.0.1",
     "phonegap-plugin-barcodescanner": "8.1.0",
     "cordova-plugin-file": "6.0.2",
-    "cordova-plugin-file-transfer": "1.7.1"
+    "cordova-plugin-file-transfer": "1.7.1",
+    "kr.co.joycorp.cordova.exitapp": "1.0.0"
   };
 });
