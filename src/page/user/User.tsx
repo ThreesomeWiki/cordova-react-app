@@ -5,6 +5,7 @@ import WechatPlugin from '../../plugins/wechatPlugin';
 import CameraPlugin from '../../plugins/cameraPlugin';
 import DevicePlugin, { DeviceType } from '../../plugins/devicePligin';
 import ContactPlugin from '../../plugins/contactPlugin';
+import FilePlugin from '../../plugins/filePlugin';
 import ScanPlugin from '../../plugins/ScanPlugin';
 import './User.scss';
 
@@ -100,6 +101,10 @@ export default function User() {
         ScanPlugin.scan().then(data => {});
     };
 
+    const onFileDownload = () => {
+        FilePlugin.download().then(data => {});
+    };
+
     return (
         <article className="User">
             {/* header */}
@@ -109,7 +114,7 @@ export default function User() {
             {/* navs */}
             <nav className="flex-row-between-center navs">
                 {navs.map(nav => (
-                    <div className="flex-column-start-center" key={nav.title} onClick={onSanf}>
+                    <div className="flex-column-start-center" key={nav.title} onClick={onFileDownload}>
                         <div className="flex-row-center-center icon" style={{ backgroundImage: `url('${nav.bg}')` }}>
                             <Icon name={nav.icon} size={0.2} color="white" />
                         </div>
