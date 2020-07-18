@@ -2,7 +2,7 @@ export default class FilePlugin {
     static download = () => {
         return new Promise(resolve => {
             if (!window.FileTransfer) return resolve('');
-            const fileTransfer = new FileTransfer();
+            const fileTransfer = new window.FileTransfer();
             const uri = encodeURI('http://some.server.com/download.php');
 
             fileTransfer.download(

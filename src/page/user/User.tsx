@@ -12,6 +12,7 @@ import ExitAppPlugin from '../../plugins/exitAppPlugin';
 import StatusBarPlugin from '../../plugins/statusBarPlugin';
 import RequestPlugin from '../../plugins/requestPlugin';
 import VersionPlugin from '../../plugins/versionPlugin';
+import SettingPlugin from '../../plugins/settingPlugin';
 import './User.scss';
 
 interface Navs {
@@ -112,8 +113,9 @@ export default function User() {
         // ExitAppPlugin.exit();
         // InAppBrowserPlugin.open();
         // RequestPlugin.request();
-        const version = await VersionPlugin.getVersion();
-        alert(version);
+        // const version = await VersionPlugin.getVersion();
+        // alert(version);
+        SettingPlugin.openWifi();
     };
 
     return (

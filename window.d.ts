@@ -3,6 +3,7 @@ interface Window {
     Wechat: any;
     device: any;
     StatusBar: any;
+    FileTransfer: any;
 }
 interface Navigator {
     camera: any;

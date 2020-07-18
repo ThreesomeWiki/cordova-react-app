@@ -67,6 +67,10 @@
             {
               "xml": "<feature name=\"AppVersion\"><param name=\"android-package\" value=\"uk.co.whiteoctober.cordova.AppVersion\" /></feature>",
               "count": 1
+            },
+            {
+              "xml": "<feature name=\"NativeSettings\"><param name=\"android-package\" value=\"com.phonegap.plugins.nativesettings.NativeSettings\" /></feature>",
+              "count": 1
             }
           ]
         }
@@ -215,6 +219,9 @@
       "PACKAGE_NAME": "com.demo"
     },
     "cordova-plugin-app-version": {
+      "PACKAGE_NAME": "com.demo"
+    },
+    "cordova-open-native-settings": {
       "PACKAGE_NAME": "com.demo"
     }
   },
@@ -662,6 +669,14 @@
       "clobbers": [
         "cordova.getAppVersion"
       ]
+    },
+    {
+      "id": "cordova-open-native-settings.Settings",
+      "file": "plugins/cordova-open-native-settings/www/settings.js",
+      "pluginId": "cordova-open-native-settings",
+      "clobbers": [
+        "cordova.plugins.settings"
+      ]
     }
   ],
   "plugin_metadata": {
@@ -679,6 +694,7 @@
     "cordova-plugin-inappbrowser": "4.0.0",
     "cordova-plugin-statusbar": "2.4.3",
     "cordova-plugin-advanced-http": "3.0.0",
-    "cordova-plugin-app-version": "0.1.9"
+    "cordova-plugin-app-version": "0.1.9",
+    "cordova-open-native-settings": "1.5.2"
   }
 }

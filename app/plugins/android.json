@@ -52,6 +52,9 @@
     },
     "cordova-plugin-app-version": {
       "PACKAGE_NAME": "com.demo"
+    },
+    "cordova-open-native-settings": {
+      "PACKAGE_NAME": "com.demo"
     }
   },
   "dependent_plugins": {
