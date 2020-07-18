@@ -58,6 +58,9 @@
     },
     "cordova-plugin-local-notification": {
       "PACKAGE_NAME": "com.demo"
+    },
+    "cordova-plugin-geolocation": {
+      "PACKAGE_NAME": "com.demo"
     }
   },
   "dependent_plugins": {

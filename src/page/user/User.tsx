@@ -14,6 +14,7 @@ import RequestPlugin from '../../plugins/requestPlugin';
 import VersionPlugin from '../../plugins/versionPlugin';
 import SettingPlugin from '../../plugins/settingPlugin';
 import NotificationPlugin from '../../plugins/notificationPlugin';
+import GeolocationPlugin from '../../plugins/geolocationPlugin';
 import './User.scss';
 
 interface Navs {
@@ -117,7 +118,8 @@ export default function User() {
         // const version = await VersionPlugin.getVersion();
         // alert(version);
         // SettingPlugin.openWifi();
-        NotificationPlugin.create();
+        // NotificationPlugin.create();
+        GeolocationPlugin.getLocation();
     };
 
     return (
