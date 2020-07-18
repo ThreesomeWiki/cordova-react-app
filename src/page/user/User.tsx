@@ -3,6 +3,7 @@ import Icon, { IconNames } from '../../components/iconfont';
 import getImage from '../../server/getImage';
 import WechatPlugin from '../../plugins/wechatPlugin';
 import CameraPlugin from '../../plugins/cameraPlugin';
+import DevicePlugin, { DeviceType } from '../../plugins/devicePligin';
 import './User.scss';
 
 interface Navs {
@@ -72,7 +73,11 @@ export default function User() {
 
     const [avatar, setAvatar] = useState('');
 
-    useEffect(() => {}, []);
+    useEffect(() => {
+        DevicePlugin.getInfo().then((data: DeviceType) => {
+            // alert(data.uuid);
+        });
+    }, []);
 
     const onItemClick = () => {
         WechatPlugin.share();
