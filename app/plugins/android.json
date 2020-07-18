@@ -55,10 +55,16 @@
     },
     "cordova-open-native-settings": {
       "PACKAGE_NAME": "com.demo"
+    },
+    "cordova-plugin-local-notification": {
+      "PACKAGE_NAME": "com.demo"
     }
   },
   "dependent_plugins": {
     "cordova-plugin-file": {
+      "PACKAGE_NAME": "com.demo"
+    },
+    "cordova-plugin-badge": {
       "PACKAGE_NAME": "com.demo"
     }
   }
