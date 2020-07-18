@@ -4,6 +4,7 @@ import getImage from '../../server/getImage';
 import WechatPlugin from '../../plugins/wechatPlugin';
 import CameraPlugin from '../../plugins/cameraPlugin';
 import DevicePlugin, { DeviceType } from '../../plugins/devicePligin';
+import ContactPlugin from '../../plugins/contactPlugin';
 import './User.scss';
 
 interface Navs {
@@ -77,6 +78,7 @@ export default function User() {
         DevicePlugin.getInfo().then((data: DeviceType) => {
             // alert(data.uuid);
         });
+        ContactPlugin.getContact();
     }, []);
 
     const onItemClick = () => {

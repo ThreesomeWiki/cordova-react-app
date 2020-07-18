@@ -5,4 +5,5 @@ interface Window {
 }
 interface Navigator {
     camera: any;
+    contacts: any;
 }
