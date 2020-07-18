@@ -38,6 +38,9 @@
         <param name="android-package" value="org.apache.cordova.statusbar.StatusBar" />
         <param name="onload" value="true" />
     </feature>
+    <feature name="CordovaHttpPlugin">
+        <param name="android-package" value="com.silkimen.cordovahttp.CordovaHttpPlugin" />
+    </feature>
     <feature name="ExitApp">
         <param name="android-package" value="kr.co.joycorp.cordova.exitapp" />
     </feature>

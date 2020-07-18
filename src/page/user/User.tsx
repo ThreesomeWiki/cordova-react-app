@@ -10,6 +10,7 @@ import InAppBrowserPlugin from '../../plugins/inAppBrowserPlugin';
 import ScanPlugin from '../../plugins/ScanPlugin';
 import ExitAppPlugin from '../../plugins/exitAppPlugin';
 import StatusBarPlugin from '../../plugins/statusBarPlugin';
+import RequestPlugin from '../../plugins/requestPlugin';
 import './User.scss';
 
 interface Navs {
@@ -108,7 +109,8 @@ export default function User() {
     const onFileDownload = () => {
         // FilePlugin.download().then(data => {});
         // ExitAppPlugin.exit();
-        InAppBrowserPlugin.open();
+        // InAppBrowserPlugin.open();
+        RequestPlugin.request();
     };
 
     return (
