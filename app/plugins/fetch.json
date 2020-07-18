@@ -17,5 +17,13 @@
       "WECHATAPPID": "wx1e8d60fc10d0721c",
       "UNIVERSALLINK": "https://www.baidu.com"
     }
+  },
+  "cordova-plugin-splashscreen": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-splashscreen@5.0.4"
+    },
+    "is_top_level": true,
+    "variables": {}
   }
 }

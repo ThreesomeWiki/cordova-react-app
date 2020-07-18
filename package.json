@@ -8,7 +8,8 @@
         "dev": "webpack-dev-server",
         "build:h5": "npx webpack",
         "icon": "npx iconfont-h5",
-        "build:android": "npx webpack && cd app && cordova prepare android && cordova run android"
+        "build:android": "npx webpack && cd app && cordova prepare android && cordova run android",
+        "createIcon:android": "cordova-res android"
     },
     "author": "",
     "license": "ISC",

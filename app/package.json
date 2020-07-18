@@ -14,6 +14,7 @@
   "license": "Apache-2.0",
   "dependencies": {
     "cordova-android": "^8.1.0",
+    "cordova-plugin-splashscreen": "^5.0.4",
     "cordova-plugin-wechat": "^3.0.0"
   },
   "devDependencies": {
@@ -25,7 +26,8 @@
       "cordova-plugin-wechat": {
         "WECHATAPPID": "wx1e8d60fc10d0721c",
         "UNIVERSALLINK": "https://www.baidu.com"
-      }
+      },
+      "cordova-plugin-splashscreen": {}
     },
     "platforms": [
       "android"
