@@ -345,6 +345,14 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
       "merges": [
         "navigator.app"
       ]
+    },
+    {
+      "id": "cordova-plugin-inappbrowser.inappbrowser",
+      "file": "plugins/cordova-plugin-inappbrowser/www/inappbrowser.js",
+      "pluginId": "cordova-plugin-inappbrowser",
+      "clobbers": [
+        "cordova.InAppBrowser.open"
+      ]
     }
   ];
   module.exports.metadata = {
@@ -358,6 +366,7 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
     "cordova-plugin-file": "6.0.2",
     "cordova-plugin-file-transfer": "1.7.1",
     "kr.co.joycorp.cordova.exitapp": "1.0.0",
-    "cordova.custom.plugins.exitapp": "1.0.0"
+    "cordova.custom.plugins.exitapp": "1.0.0",
+    "cordova-plugin-inappbrowser": "4.0.0"
   };
 });

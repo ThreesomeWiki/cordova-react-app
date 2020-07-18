@@ -6,6 +6,7 @@ import CameraPlugin from '../../plugins/cameraPlugin';
 import DevicePlugin, { DeviceType } from '../../plugins/devicePligin';
 import ContactPlugin from '../../plugins/contactPlugin';
 import FilePlugin from '../../plugins/filePlugin';
+import InAppBrowserPlugin from '../../plugins/inAppBrowserPlugin';
 import ScanPlugin from '../../plugins/ScanPlugin';
 import ExitAppPlugin from '../../plugins/exitAppPlugin';
 import './User.scss';
@@ -104,7 +105,8 @@ export default function User() {
 
     const onFileDownload = () => {
         // FilePlugin.download().then(data => {});
-        ExitAppPlugin.exit();
+        // ExitAppPlugin.exit();
+        InAppBrowserPlugin.open();
     };
 
     return (

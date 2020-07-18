@@ -31,6 +31,9 @@
     <feature name="FileTransfer">
         <param name="android-package" value="org.apache.cordova.filetransfer.FileTransfer" />
     </feature>
+    <feature name="InAppBrowser">
+        <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
+    </feature>
     <feature name="ExitApp">
         <param name="android-package" value="kr.co.joycorp.cordova.exitapp" />
     </feature>

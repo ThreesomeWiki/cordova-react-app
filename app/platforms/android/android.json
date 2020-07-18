@@ -51,6 +51,10 @@
             {
               "xml": "<feature name=\"FileTransfer\"><param name=\"android-package\" value=\"org.apache.cordova.filetransfer.FileTransfer\" /></feature>",
               "count": 1
+            },
+            {
+              "xml": "<feature name=\"InAppBrowser\"><param name=\"android-package\" value=\"org.apache.cordova.inappbrowser.InAppBrowser\" /></feature>",
+              "count": 1
             }
           ]
         }
@@ -183,6 +187,9 @@
       "PACKAGE_NAME": "com.demo"
     },
     "cordova.custom.plugins.exitapp": {
+      "PACKAGE_NAME": "com.demo"
+    },
+    "cordova-plugin-inappbrowser": {
       "PACKAGE_NAME": "com.demo"
     }
   },
@@ -533,6 +540,14 @@
       "merges": [
         "navigator.app"
       ]
+    },
+    {
+      "id": "cordova-plugin-inappbrowser.inappbrowser",
+      "file": "plugins/cordova-plugin-inappbrowser/www/inappbrowser.js",
+      "pluginId": "cordova-plugin-inappbrowser",
+      "clobbers": [
+        "cordova.InAppBrowser.open"
+      ]
     }
   ],
   "plugin_metadata": {
@@ -546,6 +561,7 @@
     "cordova-plugin-file": "6.0.2",
     "cordova-plugin-file-transfer": "1.7.1",
     "kr.co.joycorp.cordova.exitapp": "1.0.0",
-    "cordova.custom.plugins.exitapp": "1.0.0"
+    "cordova.custom.plugins.exitapp": "1.0.0",
+    "cordova-plugin-inappbrowser": "4.0.0"
   }
 }
