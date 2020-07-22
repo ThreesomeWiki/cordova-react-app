@@ -87,44 +87,41 @@ export default function User() {
     const [avatar, setAvatar] = useState('');
 
     useEffect(() => {
-        StatusBarPlugin.setBackground();
-        DevicePlugin.getInfo().then((data: DeviceType) => {
-            // alert(data.uuid);
-        });
-        // ContactPlugin.getContact();
+        if (window.cordova) {
+            StatusBarPlugin.setBackground();
+            DevicePlugin.getInfo().then((data: DeviceType) => {});
+            // ContactPlugin.getContact();
+        }
     }, []);
 
     const onItemClick = () => {
-        WechatPlugin.share();
+        if (window.cordova) {
+            WechatPlugin.share();
+        }
     };
 
     const onOpenCamera = () => {
-        CameraPlugin.getPicture()
-            .then((data: string) => {
-                setAvatar(data);
-            })
-            .catch(e => {
-                console.log(e);
-            });
+        if (window.cordova) {
+            CameraPlugin.getPicture()
+                .then((data: string) => {
+                    setAvatar(data);
+                })
+                .catch(e => {
+                    console.log(e);
+                });
+        }
     };
 
     const onSanf = () => {
-        ScanPlugin.scan().then(data => {});
+        if (window.cordova) {
+            ScanPlugin.scan().then(data => {});
+        }
     };
 
     const onFileDownload = async () => {
-        VibrationPlugin.vibrate();
-        // FilePlugin.download().then(data => {});
-        // ExitAppPlugin.exit();
-        // InAppBrowserPlugin.open();
-        // RequestPlugin.request();
-        // const version = await VersionPlugin.getVersion();
-        // alert(version);
-        // SettingPlugin.openWifi();
-        // NotificationPlugin.create();
-        // GeolocationPlugin.getLocation();
-        // await StoragePlugin.setItem('name', '张三');
-        // const data = await StoragePlugin.getItem('name');
+        if (window.cordova) {
+            VibrationPlugin.vibrate();
+        }
     };
 
     return (

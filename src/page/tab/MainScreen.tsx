@@ -16,7 +16,7 @@ interface tabType {
 }
 
 export default function MainScreen() {
-    const [active, setActive] = useState(4);
+    const [active, setActive] = useState(1);
 
     const Tabs: tabType[] = [
         { title: '首页', iconName: 'zu6', iconNameActive: 'zu7', Component: Home },
