@@ -1,4 +1,4 @@
-package io.cordova.hellocordova.wxapi;
+package com.demo.wxapi;
 
 import android.app.Activity;
 import android.content.Intent;

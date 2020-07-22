@@ -7,44 +7,7 @@
     "files": {}
   },
   "installed_plugins": {
-    "cordova-plugin-whitelist": {
-      "PACKAGE_NAME": "io.cordova.hellocordova"
-    },
-    "cordova-plugin-wechat": {
-      "WECHATAPPID": "wx1e8d60fc10d0721c",
-      "UNIVERSALLINK": "https://www.baidu.com",
-      "PACKAGE_NAME": "io.cordova.hellocordova"
-    },
-    "cordova-plugin-splashscreen": {
-      "PACKAGE_NAME": "com.demo"
-    },
-    "cordova-plugin-camera": {
-      "ANDROID_SUPPORT_V4_VERSION": "27.+",
-      "PACKAGE_NAME": "com.demo"
-    },
-    "cordova-plugin-device": {
-      "PACKAGE_NAME": "com.demo"
-    },
-    "cordova-plugin-contacts": {
-      "PACKAGE_NAME": "com.demo"
-    },
-    "phonegap-plugin-barcodescanner": {
-      "ANDROID_SUPPORT_V4_VERSION": "27.+",
-      "PACKAGE_NAME": "com.demo"
-    },
-    "cordova-plugin-file-transfer": {
-      "PACKAGE_NAME": "com.demo"
-    },
-    "kr.co.joycorp.cordova.exitapp": {
-      "PACKAGE_NAME": "com.demo"
-    },
-    "cordova.custom.plugins.exitapp": {
-      "PACKAGE_NAME": "com.demo"
-    },
-    "cordova-plugin-inappbrowser": {
-      "PACKAGE_NAME": "com.demo"
-    },
-    "cordova-plugin-statusbar": {
+    "cordova-open-native-settings": {
       "PACKAGE_NAME": "com.demo"
     },
     "cordova-plugin-advanced-http": {
@@ -53,22 +16,59 @@
     "cordova-plugin-app-version": {
       "PACKAGE_NAME": "com.demo"
     },
-    "cordova-open-native-settings": {
+    "cordova-plugin-camera": {
+      "ANDROID_SUPPORT_V4_VERSION": "27.+",
       "PACKAGE_NAME": "com.demo"
     },
-    "cordova-plugin-local-notification": {
-      "PACKAGE_NAME": "com.demo"
-    },
-    "cordova-plugin-geolocation": {
-      "PACKAGE_NAME": "com.demo"
-    },
-    "cordova-plugin-nativestorage": {
+    "cordova-plugin-contacts": {
       "PACKAGE_NAME": "com.demo"
     },
     "cordova-plugin-datepicker": {
       "PACKAGE_NAME": "com.demo"
     },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "com.demo"
+    },
+    "cordova-plugin-file-transfer": {
+      "PACKAGE_NAME": "com.demo"
+    },
+    "cordova-plugin-geolocation": {
+      "PACKAGE_NAME": "com.demo"
+    },
+    "cordova-plugin-inappbrowser": {
+      "PACKAGE_NAME": "com.demo"
+    },
+    "cordova-plugin-local-notification": {
+      "PACKAGE_NAME": "com.demo"
+    },
+    "cordova-plugin-nativestorage": {
+      "PACKAGE_NAME": "com.demo"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "com.demo"
+    },
+    "cordova-plugin-statusbar": {
+      "PACKAGE_NAME": "com.demo"
+    },
     "cordova-plugin-vibration": {
+      "PACKAGE_NAME": "com.demo"
+    },
+    "cordova-plugin-wechat": {
+      "WECHATAPPID": "wx1e8d60fc10d0721c",
+      "UNIVERSALLINK": "https://www.baidu.com",
+      "PACKAGE_NAME": "com.demo"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.demo"
+    },
+    "cordova.custom.plugins.exitapp": {
+      "PACKAGE_NAME": "com.demo"
+    },
+    "kr.co.joycorp.cordova.exitapp": {
+      "PACKAGE_NAME": "com.demo"
+    },
+    "phonegap-plugin-barcodescanner": {
+      "ANDROID_SUPPORT_V4_VERSION": "27.+",
       "PACKAGE_NAME": "com.demo"
     }
   },

@@ -21,8 +21,7 @@ apply plugin: 'com.android.application'
 
 buildscript {
     repositories {
-        // mavenCentral()
-        maven { url "http://maven.aliyun.com/nexus/content/groups/public" }
+        mavenCentral()
         google()
         jcenter()
     }
@@ -35,8 +34,7 @@ buildscript {
 // Allow plugins to declare Maven dependencies via build-extras.gradle.
 allprojects {
     repositories {
-        // mavenCentral()
-        maven { url "http://maven.aliyun.com/nexus/content/groups/public" }
+        mavenCentral()
         jcenter()
     }
 }
@@ -100,10 +98,10 @@ ext {
 }
 
 // PLUGIN GRADLE EXTENSIONS START
-apply from: "../cordova-plugin-wechat/hellocordova-android-build.gradle"
-apply from: "../phonegap-plugin-barcodescanner/demo-barcodescanner.gradle"
 apply from: "../cordova-plugin-badge/demo-badge.gradle"
 apply from: "../cordova-plugin-local-notification/demo-localnotification.gradle"
+apply from: "../cordova-plugin-wechat/demo-android-build.gradle"
+apply from: "../phonegap-plugin-barcodescanner/demo-barcodescanner.gradle"
 // PLUGIN GRADLE EXTENSIONS END
 
 def hasBuildExtras1 = file('build-extras.gradle').exists()
